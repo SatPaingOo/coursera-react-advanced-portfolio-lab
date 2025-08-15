@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Coursera React Advanced Portfolio Lab
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React-based portfolio application, designed as part of a Coursera advanced React course. It demonstrates modern React concepts, component-based architecture, and best practices for building a personal portfolio website.
 
-## Available Scripts
+## Project Structure
 
-In the project directory, you can run:
+- **public/**: Static assets and the main HTML template.
+- **src/**: Source code for the React application.
+  - **components/**: Reusable React components (e.g., Header, Footer, Card, etc.).
+  - **context/**: React context for global state management (e.g., alert context).
+  - **hooks/**: Custom React hooks (e.g., useSubmit).
+  - **images/**: Image assets used in the portfolio.
+- **screenshots/**: Screenshots and GIFs demonstrating the app's features and UI.
+- **package.json**: Project dependencies and scripts.
+- **README.md**: Project documentation.
+- **INSTRUCTIONS.md**: Additional instructions or notes.
 
-### `npm start`
+## Main Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Landing Section**: Introduction and welcome message.
+- **Header**: Navigation and branding.
+- **Projects Section**: Showcases portfolio projects using cards.
+- **Contact Me Section**: Contact form with validation and alert context.
+- **Footer**: Social links and copyright.
+- **Alert System**: Context-based alert messages for user feedback.
+- **Responsive Design**: Mobile-friendly and visually appealing UI.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Flow
 
-### `npm test`
+1. **App Initialization**: The app starts from `src/index.js`, rendering the `App` component.
+2. **Component Rendering**: The `App` component composes the main sections (Header, Landing, Projects, Contact, Footer) using reusable components.
+3. **State Management**: Uses React Context (in `src/context/alertContext.js`) for global alert state, and custom hooks (in `src/hooks/useSubmit.js`) for form handling.
+4. **Styling**: CSS files (`App.css`, `index.css`) provide global and component-level styles.
+5. **Assets**: Images and static files are loaded from `public/` and `src/images/`.
+6. **Testing**: Basic tests are provided in `src/App.test.js` and setup in `src/setupTests.js`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+1. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+2. **Run the app locally:**
+   ```sh
+   npm start
+   ```
+3. **Build for production:**
+   ```sh
+   npm run build
+   ```
+4. **Run tests:**
+   ```sh
+   npm test
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Customization
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Update content in the components under `src/components/` to personalize your portfolio.
+- Add or replace images in `src/images/` and update references in components.
+- Modify styles in `App.css` and `index.css` as needed.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Screenshots
 
-### `npm run eject`
+Screenshots and demo GIFs are available in the `screenshots/` folder.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## License
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is for educational purposes as part of the Coursera React Advanced course.
